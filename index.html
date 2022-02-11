@@ -7,29 +7,26 @@
 
 <body>
     <main>
-        <div class='father-container'>
-            <div class='container'>
-                <div class='logo-box'>
-                    <div class='logo'>
-                        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
-                    </div>
-                    <h2 class='moto'>Connect with friends and the world around you on Facebook.</h2>
+        <div class='container'>
+            <div class='logo-box'>
+                <div class='logo'>
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
                 </div>
-                <div class='login-box'>
-                    <form>
-                        <div>
-                            <div class='wrapper'>
-                                <input type="text" class="mail-password-input" name="email"
-                                    placeholder="Email or phone number" autofocus="1"
-                                    aria-label="Email or phone number">
-                            </div>
-                            <div class='wrapper'>
-                                <input type="text" class="mail-password-input" name="pass" data-testid="royal_pass"
-                                    placeholder="Password" aria-label="Password">
-                            </div>
+                <h2 class='moto'>Connect with friends and the world around you on Facebook.</h2>
+            </div>
+            <div class='login-box'>
+                <form>
+                    <div>
+                        <div class='wrapper'>
+                            <input type="text" class="mail-password-input" name="email"
+                                placeholder="Email or phone number" autofocus="1" aria-label="Email or phone number">
                         </div>
-                    </form>
-                </div>
+                        <div class='wrapper'>
+                            <input type="text" class="mail-password-input" name="pass" data-testid="royal_pass"
+                                placeholder="Password" aria-label="Password">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -47,16 +44,16 @@
 </body>
 
 <style>
-        body {
+    body {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 12px;
         overflow-y: scroll;
     }
-    
+
     main {
         background-color: #f0f2f5;
     }
-    
+
     footer {
         color: #8c8e97;
         font-size: 10pt;
@@ -70,26 +67,28 @@
 
     input[type=text]:focus {
         outline: 1pt solid #1877f2;
-        box-shadow: 0 0 4px #1877f2; 
+        box-shadow: 0 0 4px #1877f2;
     }
 
     form {
         text-align: center;
     }
 
-    
-    .father-container {
+
+    /*.father-container {
         padding-bottom: 164px;
         padding-top: 20px;
-    }
+    }*/
     .container {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
+        padding-bottom: 164px;
+        padding-top: 20px;
     }
-    
-    .logo-box{
+
+    .logo-box {
         margin: 0 auto;
         padding: 0;
         width: 400px;
@@ -105,7 +104,7 @@
         width: 500px;
         margin: 0 auto 0 auto;
     }
-    
+
     .login-box {
         /* todo es copia y pega de facebook */
         align-items: center;
@@ -145,15 +144,15 @@
         margin: 0 5pt 0 5pt;
         padding: 0 4pt 0 4pt;
     }
-    
+
     #plus:hover {
         background-color: #f0f2f5;
     }
-    
+
     #plus:active {
         background-color: lightgrey;
     }
-    
+
     #h-line {
         height: 1pt;
         width: auto;
