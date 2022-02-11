@@ -44,15 +44,9 @@
 </body>
 
 <style>
-    body {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 12px;
-        overflow-y: scroll;
-    }
-
-    main {
-        background-color: #f0f2f5;
-    }
+    body { font-family: Helvetica, Arial, sans-serif;}
+    main { background-color: #f0f2f5;}
+    form { text-align: center;}
 
     footer {
         color: #8c8e97;
@@ -61,41 +55,25 @@
         align-items: center;
     }
 
-    input {
-        border: 1pt solid #dddfe2;
-    }
-
+    input { border: 1pt solid #dddfe2;}
     input[type=text]:focus {
         outline: 1pt solid #1877f2;
         box-shadow: 0 0 4px #1877f2;
     }
 
-    form {
-        text-align: center;
-    }
-
-
-    /*.father-container {
-        padding-bottom: 164px;
-        padding-top: 20px;
-    }*/
     .container {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
-        padding-bottom: 164px;
-        padding-top: 20px;
+        padding: 100px 150px 160px 0px;
     }
 
     .logo-box {
-        margin: 0 auto;
+        /*margin: 0 auto;*/
+        /*margin-left: 30%;*/
         padding: 0;
         width: 400px;
-    }
-
-    .logo {
-        padding: 0 0 20px 0;
     }
 
     .moto {
@@ -158,6 +136,13 @@
         width: auto;
         margin: 7pt 15% 7pt 15%;
         background-color: #e5e7ea;
+    }
+
+    @media all and (max-width: 600px) {
+        .container {
+            display: block;
+            padding: none;
+        }
     }
 </style>
 
